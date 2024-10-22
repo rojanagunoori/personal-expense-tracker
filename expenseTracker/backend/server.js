@@ -18,7 +18,7 @@ app.use("/summary",summaryRouter)
 app.use("/",(req,res)=>{
     res.json("Hello ,This is working.")
 })
-
+console.log('Current working directory:', process.cwd());
 
 
 const PORT=process.env.PORT || 5000

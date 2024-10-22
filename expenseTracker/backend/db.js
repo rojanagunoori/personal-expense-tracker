@@ -4,6 +4,7 @@ const path = require('path');
 
 
 const dbPath = path.resolve(__dirname, 'expenseTracker.db');
+
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error('Error opening SQLite database:', err.message);
