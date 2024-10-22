@@ -15,6 +15,9 @@ app.use(express.json())
 app.use("/transcations",transcationRouter)
 app.use("/categories",categoriesRouter)
 app.use("/summary",summaryRouter)
+app.use("/",(req,res)=>{
+    res.json("Hello ,This is working.")
+})
 
 
 
